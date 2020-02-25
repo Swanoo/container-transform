@@ -200,7 +200,6 @@ class KubernetesTransformer(BaseTransformer):
         noalias_dumper.ignore_aliases = lambda self, data: True
         return yaml.dump(
             output,
-            default_flow_style=False,
             Dumper=noalias_dumper
         )
 
