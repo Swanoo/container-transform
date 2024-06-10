@@ -18,9 +18,9 @@ def get_version():
 
 
 install_requires = [
-    "PyYAML==6.0.1",
-    "Jinja2==3.1.4",
-    "click==8.1.7"
+    "PyYAML==5.1.0",
+    "Jinja2==2.7.0",
+    "click==7.0.0"
 ]
 tests_require = [
     'coverage>=4.0.3',
