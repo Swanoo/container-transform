@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3.12.4-bookworm
 
 COPY . /container-transform
 

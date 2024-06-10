@@ -18,9 +18,9 @@ def get_version():
 
 
 install_requires = [
-    'PyYAML>=5.1',
-    'Jinja2>=2.7.0',
-    'click>=3.3',
+    "PyYAML==6.0.1",
+    "Jinja2==3.1.4",
+    "click==8.1.7"
 ]
 tests_require = [
     'coverage>=4.0.3',
@@ -57,10 +57,11 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    entry_points='''
-        [console_scripts]
-        container-transform=container_transform.client:transform
-    ''',
+    entry_points={
+        'console_scripts': [
+            'container-transform = container_transform.client:transform'
+        ]
+    },
     license='MIT',
     install_requires=install_requires,
     include_package_data=True,
