@@ -31,7 +31,6 @@ tests_require = [
 
 extras_require = {
     'test': tests_require,
-    'packaging': ['wheel'],
     'docs': ['Sphinx>=1.2.2', 'sphinx_rtd_theme'],
 }
 
